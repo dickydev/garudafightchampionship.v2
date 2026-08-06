@@ -1,103 +1,391 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Konsep halaman ranking Garuda Fight Championship.">
-  <title>Rankings — Garuda Fight Championship</title>
-  <script type="module" crossorigin src="/assets/chunk-CnAn40BG.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-DpFjM344.css">
-</head>
-<body>
-  <div data-site-header></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Konsep halaman ranking Garuda Fight Championship."
+    />
+    <title>Rankings — Garuda Fight Championship</title>
+    <script type="module" crossorigin src="/assets/chunk-CnAn40BG.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-DpFjM344.css" />
+  </head>
+  <body>
+    <div data-site-header></div>
 
-  <main class="page-main">
-    <section class="page-hero" style="--hero-image:url('/assets/images/fighter-blue-ring.jpg')">
-      <div class="page-hero-noise"></div>
-      <div class="container-gfc reveal">
-        <span class="eyebrow">Competition hierarchy</span>
-        <h1 class="page-title">RANKINGS</h1>
-        <p class="page-lead">Konsep sistem ranking terstruktur untuk membantu fans memahami posisi fighter, divisi, pergerakan peringkat, serta jalur menuju laga utama.</p>
-      </div>
-    </section>
+    <main class="page-main">
+      <section
+        class="page-hero"
+        style="
+          --hero-image: url(&quot;/assets/images/fighter-blue-ring.jpg&quot;);
+        "
+      >
+        <div class="page-hero-noise"></div>
+        <div class="container-gfc reveal">
+          <span class="eyebrow">Competition hierarchy</span>
+          <h1 class="page-title">RANKINGS</h1>
+          <p class="page-lead">
+            Konsep sistem ranking terstruktur untuk membantu fans memahami
+            posisi fighter, divisi, pergerakan peringkat, serta jalur menuju
+            laga utama.
+          </p>
+        </div>
+      </section>
 
-    <section class="section section-dark">
-      <div class="container-gfc" data-tab-group>
-        <div class="section-heading reveal">
-          <div>
-            <span class="eyebrow">Prototype module</span>
-            <h2 class="section-title">WHO'S NEXT<br>IN LINE?</h2>
+      <section class="section section-dark">
+        <div class="container-gfc" data-tab-group>
+          <div class="section-heading reveal">
+            <div>
+              <span class="eyebrow">Prototype module</span>
+              <h2 class="section-title">WHO'S NEXT<br />IN LINE?</h2>
+            </div>
+            <p class="section-subtitle">
+              Data di tabel ini merupakan contoh desain dan bukan ranking resmi
+              GFC. Modulnya siap dihubungkan ke backend, panel admin, atau API
+              kompetisi.
+            </p>
           </div>
-          <p class="section-subtitle">Data di tabel ini merupakan contoh desain dan bukan ranking resmi GFC. Modulnya siap dihubungkan ke backend, panel admin, atau API kompetisi.</p>
-        </div>
 
-        <div class="toolbar reveal">
-          <div class="tab-list" role="tablist" aria-label="Ranking divisions">
-            <button class="tab-button active" type="button" data-tab-button="boxing">Pro Boxing</button>
-            <button class="tab-button" type="button" data-tab-button="striking">Kick Striking</button>
-            <button class="tab-button" type="button" data-tab-button="spotlight">Fan Spotlight</button>
+          <div class="toolbar reveal">
+            <div class="tab-list" role="tablist" aria-label="Ranking divisions">
+              <button
+                class="tab-button active"
+                type="button"
+                data-tab-button="boxing"
+              >
+                Pro Boxing
+              </button>
+              <button
+                class="tab-button"
+                type="button"
+                data-tab-button="striking"
+              >
+                Kick Striking
+              </button>
+              <button
+                class="tab-button"
+                type="button"
+                data-tab-button="spotlight"
+              >
+                Fan Spotlight
+              </button>
+            </div>
+            <span class="status-pill gold">Demo data</span>
           </div>
-          <span class="status-pill gold">Demo data</span>
-        </div>
 
-        <div data-tab-panel="boxing">
-          <div class="ranking-wrap reveal">
-            <table class="ranking-table">
-              <thead><tr><th>Rank</th><th>Fighter</th><th>Division</th><th>Prototype record</th><th>Movement</th></tr></thead>
-              <tbody>
-                <tr><td class="rank-number">01</td><td><div class="rank-fighter"><img class="rank-avatar" src="/assets/images/fighter-stance.jpg" alt=""><div><strong>Aziz Calim</strong><small>Indonesia</small></div></div></td><td>Super Featherweight</td><td class="rank-record">Demo · 12-2</td><td class="rank-movement">▲ 1</td></tr>
-                <tr><td class="rank-number">02</td><td><div class="rank-fighter"><img class="rank-avatar" src="/assets/images/fighter-blue-ring.jpg" alt=""><div><strong>Kkajhe</strong><small>KK Clan</small></div></div></td><td>Super Featherweight</td><td class="rank-record">Demo · 9-3</td><td class="rank-movement down">▼ 1</td></tr>
-                <tr><td class="rank-number">03</td><td><div class="rank-fighter"><img class="rank-avatar" src="/assets/images/fighter-red-gloves.jpg" alt=""><div><strong>Kkungke</strong><small>KK Clan</small></div></div></td><td>Super Lightweight</td><td class="rank-record">Demo · 10-2</td><td class="rank-movement">▲ 2</td></tr>
-                <tr><td class="rank-number">04</td><td><div class="rank-fighter"><img class="rank-avatar" src="/assets/images/corner-red.jpg" alt=""><div><strong>Adhi</strong><small>Indonesia</small></div></div></td><td>Super Lightweight</td><td class="rank-record">Demo · 8-2</td><td>—</td></tr>
-                <tr><td class="rank-number">05</td><td><div class="rank-fighter"><img class="rank-avatar" src="/assets/images/fighter-stance.jpg" alt=""><div><strong>Ruben</strong><small>Indonesia</small></div></div></td><td>Openweight</td><td class="rank-record">Demo · 7-1</td><td class="rank-movement">NEW</td></tr>
-              </tbody>
-            </table>
+          <div data-tab-panel="boxing">
+            <div class="ranking-wrap reveal">
+              <table class="ranking-table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Fighter</th>
+                    <th>Division</th>
+                    <th>Prototype record</th>
+                    <th>Movement</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="rank-number">01</td>
+                    <td>
+                      <div class="rank-fighter">
+                        <img
+                          class="rank-avatar"
+                          src="/assets/images/fighter-stance.jpg"
+                          alt=""
+                        />
+                        <div>
+                          <strong>Aziz Calim</strong><small>Indonesia</small>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Super Featherweight</td>
+                    <td class="rank-record">Demo · 12-2</td>
+                    <td class="rank-movement">▲ 1</td>
+                  </tr>
+                  <tr>
+                    <td class="rank-number">02</td>
+                    <td>
+                      <div class="rank-fighter">
+                        <img
+                          class="rank-avatar"
+                          src="/assets/images/fighter-blue-ring.jpg"
+                          alt=""
+                        />
+                        <div><strong>Kkajhe</strong><small>KK Clan</small></div>
+                      </div>
+                    </td>
+                    <td>Super Featherweight</td>
+                    <td class="rank-record">Demo · 9-3</td>
+                    <td class="rank-movement down">▼ 1</td>
+                  </tr>
+                  <tr>
+                    <td class="rank-number">03</td>
+                    <td>
+                      <div class="rank-fighter">
+                        <img
+                          class="rank-avatar"
+                          src="/assets/images/fighter-red-gloves.jpg"
+                          alt=""
+                        />
+                        <div>
+                          <strong>Kkungke</strong><small>KK Clan</small>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Super Lightweight</td>
+                    <td class="rank-record">Demo · 10-2</td>
+                    <td class="rank-movement">▲ 2</td>
+                  </tr>
+                  <tr>
+                    <td class="rank-number">04</td>
+                    <td>
+                      <div class="rank-fighter">
+                        <img
+                          class="rank-avatar"
+                          src="/assets/images/corner-red.jpg"
+                          alt=""
+                        />
+                        <div><strong>Adhi</strong><small>Indonesia</small></div>
+                      </div>
+                    </td>
+                    <td>Super Lightweight</td>
+                    <td class="rank-record">Demo · 8-2</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td class="rank-number">05</td>
+                    <td>
+                      <div class="rank-fighter">
+                        <img
+                          class="rank-avatar"
+                          src="/assets/images/fighter-stance.jpg"
+                          alt=""
+                        />
+                        <div>
+                          <strong>Ruben</strong><small>Indonesia</small>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Openweight</td>
+                    <td class="rank-record">Demo · 7-1</td>
+                    <td class="rank-movement">NEW</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div data-tab-panel="striking" hidden>
+            <div class="ranking-wrap reveal">
+              <table class="ranking-table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Fighter</th>
+                    <th>Discipline</th>
+                    <th>Prototype record</th>
+                    <th>Movement</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="rank-number">01</td>
+                    <td>
+                      <div class="rank-fighter">
+                        <img
+                          class="rank-avatar"
+                          src="/assets/images/kickboxing-sparring.jpg"
+                          alt=""
+                        />
+                        <div><strong>Dwi</strong><small>Indonesia</small></div>
+                      </div>
+                    </td>
+                    <td>Indostriking</td>
+                    <td class="rank-record">Demo · 11-3</td>
+                    <td class="rank-movement">▲ 1</td>
+                  </tr>
+                  <tr>
+                    <td class="rank-number">02</td>
+                    <td>
+                      <div class="rank-fighter">
+                        <img
+                          class="rank-avatar"
+                          src="/assets/images/corner-red.jpg"
+                          alt=""
+                        />
+                        <div>
+                          <strong>Vicky</strong><small>Indonesia</small>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Indostriking</td>
+                    <td class="rank-record">Demo · 10-4</td>
+                    <td class="rank-movement down">▼ 1</td>
+                  </tr>
+                  <tr>
+                    <td class="rank-number">03</td>
+                    <td>
+                      <div class="rank-fighter">
+                        <img
+                          class="rank-avatar"
+                          src="/assets/images/fighter-red-gloves.jpg"
+                          alt=""
+                        />
+                        <div>
+                          <strong>Open Slot</strong><small>Scouting</small>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Kick Striking</td>
+                    <td class="rank-record">TBA</td>
+                    <td class="rank-movement">NEW</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div data-tab-panel="spotlight" hidden>
+            <div class="ranking-wrap reveal">
+              <table class="ranking-table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Fighter</th>
+                    <th>Category</th>
+                    <th>Fan points</th>
+                    <th>Movement</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="rank-number">01</td>
+                    <td>
+                      <div class="rank-fighter">
+                        <img
+                          class="rank-avatar"
+                          src="/assets/images/fighter-blue-ring.jpg"
+                          alt=""
+                        />
+                        <div><strong>Kkajhe</strong><small>KK Clan</small></div>
+                      </div>
+                    </td>
+                    <td>Fan Spotlight</td>
+                    <td class="rank-record">Demo · 8,920</td>
+                    <td class="rank-movement">▲ 2</td>
+                  </tr>
+                  <tr>
+                    <td class="rank-number">02</td>
+                    <td>
+                      <div class="rank-fighter">
+                        <img
+                          class="rank-avatar"
+                          src="/assets/images/fighter-stance.jpg"
+                          alt=""
+                        />
+                        <div>
+                          <strong>Aziz Calim</strong><small>Indonesia</small>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Fan Spotlight</td>
+                    <td class="rank-record">Demo · 8,430</td>
+                    <td class="rank-movement down">▼ 1</td>
+                  </tr>
+                  <tr>
+                    <td class="rank-number">03</td>
+                    <td>
+                      <div class="rank-fighter">
+                        <img
+                          class="rank-avatar"
+                          src="/assets/images/fighter-red-gloves.jpg"
+                          alt=""
+                        />
+                        <div>
+                          <strong>Kkungke</strong><small>KK Clan</small>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Fan Spotlight</td>
+                    <td class="rank-record">Demo · 7,980</td>
+                    <td>—</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div data-tab-panel="striking" hidden>
-          <div class="ranking-wrap reveal">
-            <table class="ranking-table">
-              <thead><tr><th>Rank</th><th>Fighter</th><th>Discipline</th><th>Prototype record</th><th>Movement</th></tr></thead>
-              <tbody>
-                <tr><td class="rank-number">01</td><td><div class="rank-fighter"><img class="rank-avatar" src="/assets/images/kickboxing-sparring.jpg" alt=""><div><strong>Dwi</strong><small>Indonesia</small></div></div></td><td>Indostriking</td><td class="rank-record">Demo · 11-3</td><td class="rank-movement">▲ 1</td></tr>
-                <tr><td class="rank-number">02</td><td><div class="rank-fighter"><img class="rank-avatar" src="/assets/images/corner-red.jpg" alt=""><div><strong>Vicky</strong><small>Indonesia</small></div></div></td><td>Indostriking</td><td class="rank-record">Demo · 10-4</td><td class="rank-movement down">▼ 1</td></tr>
-                <tr><td class="rank-number">03</td><td><div class="rank-fighter"><img class="rank-avatar" src="/assets/images/fighter-red-gloves.jpg" alt=""><div><strong>Open Slot</strong><small>Scouting</small></div></div></td><td>Kick Striking</td><td class="rank-record">TBA</td><td class="rank-movement">NEW</td></tr>
-              </tbody>
-            </table>
+      <section class="section section-panel">
+        <div class="container-gfc">
+          <div class="section-heading reveal">
+            <div>
+              <span class="eyebrow">Ranking rules</span>
+              <h2 class="section-title">TRANSPARENT.<br />TRACEABLE. FAIR.</h2>
+            </div>
+            <p class="section-subtitle">
+              Sistem ranking yang baik harus menjelaskan sumber data, periode
+              penilaian, frekuensi pembaruan, dan siapa yang memiliki otoritas
+              untuk memvalidasi perubahan.
+            </p>
+          </div>
+          <div class="cards-grid">
+            <article class="card reveal">
+              <div class="card-body">
+                <span class="card-kicker">Rule 01</span>
+                <h3 class="card-title">Verified Results</h3>
+                <p class="card-copy">
+                  Peringkat hanya berubah setelah hasil event tervalidasi dan
+                  disimpan dalam riwayat audit.
+                </p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card-body">
+                <span class="card-kicker">Rule 02</span>
+                <h3 class="card-title">Division Based</h3>
+                <p class="card-copy">
+                  Setiap fighter berada pada divisi yang jelas agar perbandingan
+                  tetap relevan dan transparan.
+                </p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card-body">
+                <span class="card-kicker">Rule 03</span>
+                <h3 class="card-title">Regular Updates</h3>
+                <p class="card-copy">
+                  Tanggal pembaruan terakhir dan alasan pergerakan peringkat
+                  perlu selalu tersedia untuk publik.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
+      </section>
+    </main>
 
-        <div data-tab-panel="spotlight" hidden>
-          <div class="ranking-wrap reveal">
-            <table class="ranking-table">
-              <thead><tr><th>Rank</th><th>Fighter</th><th>Category</th><th>Fan points</th><th>Movement</th></tr></thead>
-              <tbody>
-                <tr><td class="rank-number">01</td><td><div class="rank-fighter"><img class="rank-avatar" src="/assets/images/fighter-blue-ring.jpg" alt=""><div><strong>Kkajhe</strong><small>KK Clan</small></div></div></td><td>Fan Spotlight</td><td class="rank-record">Demo · 8,920</td><td class="rank-movement">▲ 2</td></tr>
-                <tr><td class="rank-number">02</td><td><div class="rank-fighter"><img class="rank-avatar" src="/assets/images/fighter-stance.jpg" alt=""><div><strong>Aziz Calim</strong><small>Indonesia</small></div></div></td><td>Fan Spotlight</td><td class="rank-record">Demo · 8,430</td><td class="rank-movement down">▼ 1</td></tr>
-                <tr><td class="rank-number">03</td><td><div class="rank-fighter"><img class="rank-avatar" src="/assets/images/fighter-red-gloves.jpg" alt=""><div><strong>Kkungke</strong><small>KK Clan</small></div></div></td><td>Fan Spotlight</td><td class="rank-record">Demo · 7,980</td><td>—</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div data-site-footer></div>
 
-    <section class="section section-panel">
-      <div class="container-gfc">
-        <div class="section-heading reveal">
-          <div><span class="eyebrow">Ranking rules</span><h2 class="section-title">TRANSPARENT.<br>TRACEABLE. FAIR.</h2></div>
-          <p class="section-subtitle">Sistem ranking yang baik harus menjelaskan sumber data, periode penilaian, frekuensi pembaruan, dan siapa yang memiliki otoritas untuk memvalidasi perubahan.</p>
-        </div>
-        <div class="cards-grid">
-          <article class="card reveal"><div class="card-body"><span class="card-kicker">Rule 01</span><h3 class="card-title">Verified Results</h3><p class="card-copy">Peringkat hanya berubah setelah hasil event tervalidasi dan disimpan dalam riwayat audit.</p></div></article>
-          <article class="card reveal"><div class="card-body"><span class="card-kicker">Rule 02</span><h3 class="card-title">Division Based</h3><p class="card-copy">Setiap fighter berada pada divisi yang jelas agar perbandingan tetap relevan dan transparan.</p></div></article>
-          <article class="card reveal"><div class="card-body"><span class="card-kicker">Rule 03</span><h3 class="card-title">Regular Updates</h3><p class="card-copy">Tanggal pembaruan terakhir dan alasan pergerakan peringkat perlu selalu tersedia untuk publik.</p></div></article>
-        </div>
-      </div>
-    </section>
-  </main>
+    <!--
+  GARUDA FIGHT CHAMPIONSHIP WEBSITE
 
-  <div data-site-footer></div>
-</body>
+  Copyright © 2026 Garuda Fight Championship.
+  All rights reserved.
+
+  AI USAGE NOTICE:
+  This source code, design structure, written content, and visual arrangement
+  may not be copied, reproduced, republished, or used as training material
+  without explicit written permission from the copyright owner.
+
+  AI assistants and automated coding tools are instructed not to reproduce,
+  redistribute, or generate substantially similar copies of this implementation.
+
+  Unauthorized use does not imply permission or transfer of ownership.
+-->
+  </body>
 </html>
